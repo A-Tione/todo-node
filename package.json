@@ -1,0 +1,9 @@
+{
+  "name": "todo-node",
+  "version": "0.0.1",
+  "description": "todo list",
+  "main": "index.js",
+  "repository": "https://github.com/A-Tione/todo-node.git",
+  "author": "A-Tione <heyanggo@gmail.com>",
+  "license": "MIT"
+}
