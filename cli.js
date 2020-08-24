@@ -28,9 +28,12 @@ program
       }
   })
 
-if (process.argv.length === 2) {
-    // 说明用户直接运行 node cli.js
-    api.showAll()
-}
+program
+    .command('list')
+    .description('look all tasks')
+    .action(() => {
+        api.showAll()
+    })
+
 program.parse(process.argv);
 
