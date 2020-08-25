@@ -1,6 +1,15 @@
 {
   "name": "tione-todo-node",
   "version": "0.0.1",
+  "bin": {
+    "t": "cli.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "files": [
+    "*.js"
+  ],
   "description": "todo list",
   "main": "index.js",
   "repository": "https://github.com/A-Tione/todo-node.git",
@@ -9,5 +18,8 @@
   "dependencies": {
     "commander": "^6.0.0",
     "inquirer": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
   }
 }
