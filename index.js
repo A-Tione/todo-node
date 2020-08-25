@@ -36,6 +36,11 @@ function updateTitle(list, index) {
   })
 }
 
+function remove(list, index) {
+  list.splice(index, 1)
+  db.write(list)
+}
+
 function askForAction (list, index) {
   const actions = {markAsundone, markAsDone, remove, updateTitle}
   inquirer.prompt({
