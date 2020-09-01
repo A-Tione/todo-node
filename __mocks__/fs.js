@@ -5,7 +5,7 @@ Object.assign(fs, _fs)
 
 let readMocks = {}
 
-fs.setReadFileMock = (path, error, data) =>{
+fs.setReadFileMock = (path, error, data) => {
   readMocks[path] = [error, data]
 }
 
@@ -22,7 +22,7 @@ fs.readFile = (path, options, callback) => {
 
 let writeMocks = {}
 
-fs.setWriteFileMock = (path, fn) =>{
+fs.setWriteFileMock = (path, fn) => {
   writeMocks[path] = fn
 }
 
